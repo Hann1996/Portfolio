@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Hannah Archer</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Hannah Archer</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets/Designer11-copy.png" alt="Hannah Archer profile picture"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Hannah Archer</h1>
+            <p class="section__text__p2">
+                <span class="auto"></span>
+            </p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/_CV.pdf')" >Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/hannah-archer-734ba0aa'">
+                <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/Hann1996'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="about-containers">
+            <div class="about-pic-container">
+                <img src="assets/Designer12-copy.png" alt="About picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
+                        <h3>Experience</h3>
+                        <p>1+ year <br />Frontend Developer</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon"/>
+                        <h3>Education</h3>
+                        <p>B.A.A Bachelor Degree <br />M.Sc. Master Degree</p>
+                    </div>
+                </div>
+                <div class="about-me">
+                    <h2>About Me</h2>
+                    <p>I'm a <strong>Software Engineer</strong> with a strong foundation in both business and technology. I hold a degree in <strong>International Business Management with a focus on Marketing</strong>, which provides me with a strategic mindset and a structured approach to problem-solving.</p>
+                    
+                    <p>Through completing a <strong>software engineering bootcamp</strong>, I gained hands-on experience with both front-end and back-end technologies, working on real-world applications from start to finish. I specialize in creating responsive and user-friendly web applications, leveraging technologies like <strong>HTML, CSS, JavaScript, and Python</strong>.</p>
+                    
+                    <p>I’m currently expanding my backend expertise with <strong>Ruby</strong> to enhance my skill set in delivering data-driven solutions and robust systems. My experience includes building engaging interfaces, managing databases, and implementing API integrations—all with a focus on <strong>quality</strong> and <strong>usability</strong>.</p>
+                    
+                    <p>Beyond technical skills, I am passionate about <strong>continuous learning</strong> and <strong>improving user experience</strong>. My goal is to develop applications that are not only functional but also intuitive and enjoyable for users.</p>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'"/>
+    </section>
+
+    <section id="experience">
+        <section id="experience">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Experience</h1>
+            <div class="experience-details-containers">
+                <!-- First Section: Frontend Developer -->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Developer</h2>
+                    <div class="article-container">
+                        <article> 
+                            <img src="./assets/checkmark.png" alt="HTML icon" class="icon"/>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article> 
+                            <img src="./assets/checkmark.png" alt="CSS icon" class="icon"/>
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article> 
+                            <img src="./assets/checkmark.png" alt="React icon" class="icon"/>
+                            <div>
+                                <h3>React</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <article> 
+                            <img src="./assets/checkmark.png" alt="Python icon" class="icon"/>
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article> 
+                            <img src="./assets/checkmark.png" alt="JavaScript icon" class="icon"/>
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+                <!-- Second Section: Backend Developer -->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Developer</h2>
+                    <div class="article-container">
+                        <article> 
+                            <img src="./assets/checkmark.png" alt="SQL icon" class="icon"/>
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <article> 
+                            <img src="./assets/checkmark.png" alt="Node.js icon" class="icon"/>
+                            <div>
+                                <h3>Node.js</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+        
+                <!-- Third Section: UI/UX -->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">UI/UX</h2>
+                    <div class="article-container">
+                        <article> 
+                            <img src="./assets/checkmark.png" alt="Figma icon" class="icon"/>
+                            <div>
+                                <h3>Figma</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <!-- Add more articles as needed -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+                        <article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'"/>
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/coffee-image.jpg" alt="Project One" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Hann1996/CoffeeShop/tree/main'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='file:///C:/Users/Hanna/Coffee%20portfolio/Coffee/assets/index.html'">Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project2.png" alt="Project Two" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Hann1996/Animated-Login-form'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='file:///C:/Users/Hanna/Registration%20Portfolio/index.html'">Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3...png" alt="Project Three" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Three</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Hann1996/Smart-Home'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.figma.com/design/Yb6XEcMzaz61fe1Lr1Kqci/Smart-Home?m=auto&t=p1xW11rno6ogrtdP-6'">Live Demo</button>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'"/>
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon"/>
+                <p><a href="mailto:examplemail@gmail.com">Email Me</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/in/hannah-archer-734ba0aa">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Hannah Archer. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+ 
